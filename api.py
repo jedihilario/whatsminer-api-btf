@@ -107,9 +107,8 @@ class WhatsminerAccessToken:
 
 
 class WhatsminerAPI:
-    """ Stateless classmethod-only read/write API calls. Use a WhatsminerAccessToken
-        instance for each ASIC you want to access.
-    """
+    # Stateless classmethod-only read/write API calls. Use a WhatsminerAccessToken
+    # instance for each ASIC you want to access.
 
     @classmethod
     def get_read_only_info(self, access_token: WhatsminerAccessToken, cmd: str, additional_params: dict = None):
